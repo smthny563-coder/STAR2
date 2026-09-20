@@ -1,0 +1,1 @@
+using Microsoft.Data.SqlClient;namespace STAR.Database{public static class Db{public static string ConnectionString="Server=(localdb)\\MSSQLLocalDB;Database=STAR_DB;Trusted_Connection=True;TrustServerCertificate=True;";public static SqlConnection Open(){var c=new SqlConnection(ConnectionString);c.Open();return c;}}}
