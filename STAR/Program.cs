@@ -1,1 +1,16 @@
-using System;using System.Windows.Forms;namespace STAR{static class Program{[STAThread]static void Main(){ApplicationConfiguration.Initialize();Application.Run(new Forms.SplashForm());}}}
+using System;
+using System.Windows.Forms;
+
+namespace STAR
+{
+    internal static class Program
+    {
+        [STAThread]
+        private static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Forms.SplashForm());
+        }
+    }
+}
